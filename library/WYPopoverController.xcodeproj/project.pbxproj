@@ -1,0 +1,344 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		84F65F4E1A7D00B300EE5C75 /* WYPopoverController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 84F65F4D1A7D00B300EE5C75 /* WYPopoverController.h */; };
+		84F65F501A7D00B300EE5C75 /* WYPopoverController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F65F4F1A7D00B300EE5C75 /* WYPopoverController.m */; };
+		84F65F561A7D00B300EE5C75 /* libWYPopoverController.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F65F4A1A7D00B300EE5C75 /* libWYPopoverController.a */; };
+		84F65F661A7D012100EE5C75 /* WYStoryboardPopoverSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F65F651A7D012100EE5C75 /* WYStoryboardPopoverSegue.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		84F65F571A7D00B300EE5C75 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84F65F421A7D00B300EE5C75 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84F65F491A7D00B300EE5C75;
+			remoteInfo = WYPopoverController;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		84F65F481A7D00B300EE5C75 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				84F65F4E1A7D00B300EE5C75 /* WYPopoverController.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		84F65F4A1A7D00B300EE5C75 /* libWYPopoverController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libWYPopoverController.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		84F65F4D1A7D00B300EE5C75 /* WYPopoverController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WYPopoverController.h; sourceTree = "<group>"; };
+		84F65F4F1A7D00B300EE5C75 /* WYPopoverController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WYPopoverController.m; sourceTree = "<group>"; };
+		84F65F551A7D00B300EE5C75 /* WYPopoverControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WYPopoverControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84F65F641A7D012100EE5C75 /* WYStoryboardPopoverSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYStoryboardPopoverSegue.h; sourceTree = "<group>"; };
+		84F65F651A7D012100EE5C75 /* WYStoryboardPopoverSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYStoryboardPopoverSegue.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84F65F471A7D00B300EE5C75 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84F65F521A7D00B300EE5C75 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84F65F561A7D00B300EE5C75 /* libWYPopoverController.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		84F65F411A7D00B300EE5C75 = {
+			isa = PBXGroup;
+			children = (
+				84F65F4C1A7D00B300EE5C75 /* WYPopoverController */,
+				84F65F4B1A7D00B300EE5C75 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		84F65F4B1A7D00B300EE5C75 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84F65F4A1A7D00B300EE5C75 /* libWYPopoverController.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84F65F4C1A7D00B300EE5C75 /* WYPopoverController */ = {
+			isa = PBXGroup;
+			children = (
+				84F65F641A7D012100EE5C75 /* WYStoryboardPopoverSegue.h */,
+				84F65F651A7D012100EE5C75 /* WYStoryboardPopoverSegue.m */,
+				84F65F4D1A7D00B300EE5C75 /* WYPopoverController.h */,
+				84F65F4F1A7D00B300EE5C75 /* WYPopoverController.m */,
+			);
+			path = WYPopoverController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84F65F491A7D00B300EE5C75 /* WYPopoverController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84F65F5E1A7D00B300EE5C75 /* Build configuration list for PBXNativeTarget "WYPopoverController" */;
+			buildPhases = (
+				84F65F461A7D00B300EE5C75 /* Sources */,
+				84F65F471A7D00B300EE5C75 /* Frameworks */,
+				84F65F481A7D00B300EE5C75 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WYPopoverController;
+			productName = WYPopoverController;
+			productReference = 84F65F4A1A7D00B300EE5C75 /* libWYPopoverController.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84F65F421A7D00B300EE5C75 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = admin;
+				TargetAttributes = {
+					84F65F491A7D00B300EE5C75 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					84F65F541A7D00B300EE5C75 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
+			};
+			buildConfigurationList = 84F65F451A7D00B300EE5C75 /* Build configuration list for PBXProject "WYPopoverController" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 84F65F411A7D00B300EE5C75;
+			productRefGroup = 84F65F4B1A7D00B300EE5C75 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84F65F491A7D00B300EE5C75 /* WYPopoverController */,
+				84F65F541A7D00B300EE5C75 /* WYPopoverControllerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84F65F531A7D00B300EE5C75 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84F65F461A7D00B300EE5C75 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84F65F661A7D012100EE5C75 /* WYStoryboardPopoverSegue.m in Sources */,
+				84F65F501A7D00B300EE5C75 /* WYPopoverController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84F65F511A7D00B300EE5C75 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		84F65F581A7D00B300EE5C75 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84F65F491A7D00B300EE5C75 /* WYPopoverController */;
+			targetProxy = 84F65F571A7D00B300EE5C75 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		84F65F5C1A7D00B300EE5C75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		84F65F5D1A7D00B300EE5C75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84F65F5F1A7D00B300EE5C75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		84F65F601A7D00B300EE5C75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		84F65F621A7D00B300EE5C75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = WYPopoverControllerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		84F65F631A7D00B300EE5C75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = WYPopoverControllerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84F65F451A7D00B300EE5C75 /* Build configuration list for PBXProject "WYPopoverController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84F65F5C1A7D00B300EE5C75 /* Debug */,
+				84F65F5D1A7D00B300EE5C75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84F65F5E1A7D00B300EE5C75 /* Build configuration list for PBXNativeTarget "WYPopoverController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84F65F5F1A7D00B300EE5C75 /* Debug */,
+				84F65F601A7D00B300EE5C75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84F65F611A7D00B300EE5C75 /* Build configuration list for PBXNativeTarget "WYPopoverControllerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84F65F621A7D00B300EE5C75 /* Debug */,
+				84F65F631A7D00B300EE5C75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84F65F421A7D00B300EE5C75 /* Project object */;
+}

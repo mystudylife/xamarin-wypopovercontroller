@@ -1,0 +1,14 @@
+﻿<Properties StartupItem="WYPopover.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="libWYPopoverController.linkwith.cs">
+    <Files>
+      <File FileName="libWYPopoverController.linkwith.cs" Line="1" Column="1" />
+      <File FileName="ApiDefinition.cs" Line="36" Column="36" />
+      <File FileName="StructsAndEnums.cs" Line="20" Column="20" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

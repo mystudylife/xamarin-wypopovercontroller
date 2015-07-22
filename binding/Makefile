@@ -1,4 +1,4 @@
-BTOUCH=/Developer/MonoTouch/usr/bin/btouch
+BTOUCH=/Developer/MonoTouch/usr/bin/btouch-native
 SMCS=/Developer/MonoTouch/usr/bin/smcs
 MONOXBUILD=/Library/Frameworks/Mono.framework/Commands/xbuild
 VERSION=0.2.2

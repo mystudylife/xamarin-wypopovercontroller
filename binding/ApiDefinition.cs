@@ -1,8 +1,9 @@
 ﻿using System;
 using System.Drawing;
-using MonoTouch.ObjCRuntime;
-using MonoTouch.Foundation;
-using MonoTouch.UIKit;
+using CoreGraphics;
+using ObjCRuntime;
+using Foundation;
+using UIKit;
 
 namespace WYPopover {
 
@@ -33,7 +34,7 @@ namespace WYPopover {
 		// @property (assign, nonatomic) CGSize glossShadowOffset;
 		[Export ("glossShadowOffset", ArgumentSemantic.UnsafeUnretained)]
 		[Appearance]
-		SizeF GlossShadowOffset { get; set; }
+		CGSize GlossShadowOffset { get; set; }
 
 		// @property (assign, nonatomic) NSUInteger glossShadowBlurRadius;
 		[Export ("glossShadowBlurRadius", ArgumentSemantic.UnsafeUnretained)]
@@ -73,7 +74,7 @@ namespace WYPopover {
 		// @property (assign, nonatomic) CGSize outerShadowOffset;
 		[Export ("outerShadowOffset", ArgumentSemantic.UnsafeUnretained)]
 		[Appearance]
-		SizeF OuterShadowOffset { get; set; }
+		CGSize OuterShadowOffset { get; set; }
 
 		// @property (assign, nonatomic) NSUInteger outerCornerRadius;
 		[Export ("outerCornerRadius", ArgumentSemantic.UnsafeUnretained)]
@@ -103,7 +104,7 @@ namespace WYPopover {
 		// @property (assign, nonatomic) CGSize innerShadowOffset;
 		[Export ("innerShadowOffset", ArgumentSemantic.UnsafeUnretained)]
 		[Appearance]
-		SizeF InnerShadowOffset { get; set; }
+		CGSize InnerShadowOffset { get; set; }
 
 		// @property (assign, nonatomic) NSUInteger innerCornerRadius;
 		[Export ("innerCornerRadius", ArgumentSemantic.UnsafeUnretained)]
@@ -160,7 +161,7 @@ namespace WYPopover {
 
 		// @property (assign, nonatomic) CGSize popoverContentSize;
 		[Export ("popoverContentSize", ArgumentSemantic.UnsafeUnretained)]
-		SizeF PopoverContentSize { get; set; }
+		CGSize PopoverContentSize { get; set; }
 
 		// @property (assign, nonatomic) float animationDuration;
 		[Export ("animationDuration", ArgumentSemantic.UnsafeUnretained)]
@@ -188,19 +189,19 @@ namespace WYPopover {
 
 		// -(void)presentPopoverFromRect:(CGRect)rect inView:(UIView *)view permittedArrowDirections:(WYPopoverArrowDirection)arrowDirections animated:(BOOL)animated;
 		[Export ("presentPopoverFromRect:inView:permittedArrowDirections:animated:")]
-		void PresentPopoverFromRect (RectangleF rect, UIView view, WYPopoverArrowDirection arrowDirections, bool animated);
+		void PresentPopoverFromRect (CGRect rect, UIView view, WYPopoverArrowDirection arrowDirections, bool animated);
 
 		// -(void)presentPopoverFromRect:(CGRect)rect inView:(UIView *)view permittedArrowDirections:(WYPopoverArrowDirection)arrowDirections animated:(BOOL)animated completion:(void (^)(void))completion;
 		[Export ("presentPopoverFromRect:inView:permittedArrowDirections:animated:completion:")]
-		void PresentPopoverFromRect (RectangleF rect, UIView view, WYPopoverArrowDirection arrowDirections, bool animated, Action completion);
+		void PresentPopoverFromRect (CGRect rect, UIView view, WYPopoverArrowDirection arrowDirections, bool animated, Action completion);
 
 		// -(void)presentPopoverFromRect:(CGRect)rect inView:(UIView *)view permittedArrowDirections:(WYPopoverArrowDirection)arrowDirections animated:(BOOL)animated options:(WYPopoverAnimationOptions)options;
 		[Export ("presentPopoverFromRect:inView:permittedArrowDirections:animated:options:")]
-		void PresentPopoverFromRect (RectangleF rect, UIView view, WYPopoverArrowDirection arrowDirections, bool animated, WYPopoverAnimationOptions options);
+		void PresentPopoverFromRect (CGRect rect, UIView view, WYPopoverArrowDirection arrowDirections, bool animated, WYPopoverAnimationOptions options);
 
 		// -(void)presentPopoverFromRect:(CGRect)rect inView:(UIView *)view permittedArrowDirections:(WYPopoverArrowDirection)arrowDirections animated:(BOOL)animated options:(WYPopoverAnimationOptions)options completion:(void (^)(void))completion;
 		[Export ("presentPopoverFromRect:inView:permittedArrowDirections:animated:options:completion:")]
-		void PresentPopoverFromRect (RectangleF rect, UIView view, WYPopoverArrowDirection arrowDirections, bool animated, WYPopoverAnimationOptions options, Action completion);
+		void PresentPopoverFromRect (CGRect rect, UIView view, WYPopoverArrowDirection arrowDirections, bool animated, WYPopoverAnimationOptions options, Action completion);
 
 		// -(void)presentPopoverFromBarButtonItem:(UIBarButtonItem *)item permittedArrowDirections:(WYPopoverArrowDirection)arrowDirections animated:(BOOL)animated;
 		[Export ("presentPopoverFromBarButtonItem:permittedArrowDirections:animated:")]
@@ -224,7 +225,7 @@ namespace WYPopover {
 
 		// -(void)presentPopoverAsDialogAnimated:(BOOL)animated completion:(void (^)(void))completion;
 		[Export ("presentPopoverAsDialogAnimated:completion:")]
-		void PresentPopoverAsDialogAnimated (bool animated, NSAction completion);
+		void PresentPopoverAsDialogAnimated (bool animated, Action completion);
 
 		// -(void)presentPopoverAsDialogAnimated:(BOOL)animated options:(WYPopoverAnimationOptions)options;
 		[Export ("presentPopoverAsDialogAnimated:options:")]
@@ -232,7 +233,7 @@ namespace WYPopover {
 
 		// -(void)presentPopoverAsDialogAnimated:(BOOL)animated options:(WYPopoverAnimationOptions)options completion:(void (^)(void))completion;
 		[Export ("presentPopoverAsDialogAnimated:options:completion:")]
-		void PresentPopoverAsDialogAnimated (bool animated, WYPopoverAnimationOptions options, NSAction completion);
+		void PresentPopoverAsDialogAnimated (bool animated, WYPopoverAnimationOptions options, Action completion);
 
 		// -(void)dismissPopoverAnimated:(BOOL)animated;
 		[Export ("dismissPopoverAnimated:")]
@@ -240,7 +241,7 @@ namespace WYPopover {
 
 		// -(void)dismissPopoverAnimated:(BOOL)animated completion:(void (^)(void))completion;
 		[Export ("dismissPopoverAnimated:completion:")]
-		void DismissPopoverAnimated (bool animated, NSAction completion);
+		void DismissPopoverAnimated (bool animated, Action completion);
 
 		// -(void)dismissPopoverAnimated:(BOOL)animated options:(WYPopoverAnimationOptions)aOptions;
 		[Export ("dismissPopoverAnimated:options:")]
@@ -248,7 +249,7 @@ namespace WYPopover {
 
 		// -(void)dismissPopoverAnimated:(BOOL)animated options:(WYPopoverAnimationOptions)aOptions completion:(void (^)(void))completion;
 		[Export ("dismissPopoverAnimated:options:completion:")]
-		void DismissPopoverAnimated (bool animated, WYPopoverAnimationOptions aOptions, NSAction completion);
+		void DismissPopoverAnimated (bool animated, WYPopoverAnimationOptions aOptions, Action completion);
 	}
 
 	// @protocol WYPopoverControllerDelegate <NSObject>
@@ -270,7 +271,7 @@ namespace WYPopover {
 
 		// @optional -(void)popoverController:(WYPopoverController *)popoverController willRepositionPopoverToRect:(CGRect *)rect inView:(UIView **)view;
 		[Export ("popoverController:willRepositionPopoverToRect:inView:")]
-		void WillRepositionPopoverToRect (WYPopoverController popoverController, RectangleF rect, out UIView view);
+		void WillRepositionPopoverToRect (WYPopoverController popoverController, CGRect rect, out UIView view);
 
 		// @optional -(BOOL)popoverControllerShouldIgnoreKeyboardBounds:(WYPopoverController *)popoverController;
 		[Export ("popoverControllerShouldIgnoreKeyboardBounds:")]
@@ -303,7 +304,7 @@ namespace WYPopover {
 
 		// @property (assign, nonatomic) CGSize glossShadowOffset;
 		[Export ("glossShadowOffset", ArgumentSemantic.UnsafeUnretained)]
-		SizeF GlossShadowOffset { get; set; }
+		CGSize GlossShadowOffset { get; set; }
 
 		// @property (assign, nonatomic) NSUInteger glossShadowBlurRadius;
 		[Export ("glossShadowBlurRadius", ArgumentSemantic.UnsafeUnretained)]
@@ -335,7 +336,7 @@ namespace WYPopover {
 
 		// @property (assign, nonatomic) CGSize outerShadowOffset;
 		[Export ("outerShadowOffset", ArgumentSemantic.UnsafeUnretained)]
-		SizeF OuterShadowOffset { get; set; }
+		CGSize OuterShadowOffset { get; set; }
 
 		// @property (assign, nonatomic) NSUInteger outerCornerRadius;
 		[Export ("outerCornerRadius", ArgumentSemantic.UnsafeUnretained)]
@@ -359,7 +360,7 @@ namespace WYPopover {
 
 		// @property (assign, nonatomic) CGSize innerShadowOffset;
 		[Export ("innerShadowOffset", ArgumentSemantic.UnsafeUnretained)]
-		SizeF InnerShadowOffset { get; set; }
+		CGSize InnerShadowOffset { get; set; }
 
 		// @property (assign, nonatomic) NSUInteger innerCornerRadius;
 		[Export ("innerCornerRadius", ArgumentSemantic.UnsafeUnretained)]

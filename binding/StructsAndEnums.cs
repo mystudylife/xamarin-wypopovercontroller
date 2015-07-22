@@ -1,11 +1,11 @@
 ﻿using System;
-using MonoTouch.ObjCRuntime;
+using ObjCRuntime;
 
 namespace WYPopover {
 
 	[Native]
 	[Flags]
-	public enum WYPopoverArrowDirection : uint /* nuint */ {
+	public enum WYPopoverArrowDirection : ulong {
 		Up = 1U << 0,
 		Down = 1U << 1,
 		Left = 1U << 2,
@@ -17,7 +17,7 @@ namespace WYPopover {
 
 	[Native]
 	[Flags]
-	public enum WYPopoverAnimationOptions : uint /* nuint */ {
+	public enum WYPopoverAnimationOptions : ulong {
 		Fade = 1U << 0,
 		Scale = 1U << 1,
 		FadeWithScale = Fade | Scale
